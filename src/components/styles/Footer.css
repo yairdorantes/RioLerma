@@ -1,0 +1,45 @@
+#social-media {
+  position: absolute;
+  bottom: 0;
+  margin-top: 100px;
+  left: 50%;
+}
+.container-social-media {
+  display: flex;
+  justify-content: center;
+}
+.container-social-media > div {
+  margin: 10px;
+  text-align: center;
+}
+.logo-red {
+  width: 50px;
+  transition: ease-in-out 4s;
+  /* margin: 10px; */
+  animation: up-down 2s infinite;
+  /* margin-top: 100px; */
+}
+.middle {
+  /* transition: ease-in-out 4s; */
+  animation: up-down-middle 2s infinite;
+}
+
+/* @keyframes up-down {
+  0%,
+  100% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 10px;
+  }
+}
+
+@keyframes up-down-middle {
+  50% {
+    margin-top: 0px;
+  }
+  0%,
+  100% {
+    margin-top: 10px;
+  }
+} */
