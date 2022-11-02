@@ -18,7 +18,6 @@ const HamburgerMenu = () => {
   const openModal = (e) => {
     modalIsOpen ? setModalIsOpen(false) : setModalIsOpen(true);
     isOpen ? setOpen(false) : setOpen(true);
-    console.log("modal");
   };
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isOpen, setOpen] = useState(false);
@@ -52,7 +51,13 @@ const HamburgerMenu = () => {
         <div onClick={openModal}>
           {/* <h1>menu1</h1> */}
           <AnchorLink className="anchor-text" href="#swiper-anchor">
-            <h1>Galeria de imágenes</h1>
+            <h1>Galeria de datos</h1>
+          </AnchorLink>
+        </div>
+        <div onClick={openModal}>
+          {/* <h1>menu1</h1> */}
+          <AnchorLink className="anchor-text" href="#info">
+            <h1>Información</h1>
           </AnchorLink>
         </div>
         <div onClick={openModal}>

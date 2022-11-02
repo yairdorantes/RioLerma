@@ -5,9 +5,26 @@
   width: 100%;
   /* height: 30%; */
 }
+.container-swipe {
+  position: relative;
+}
 .img-swiper {
   /* width: 100px; */
   /* display: block; */
   width: 100%;
-  border-radius: 20px;
+  /* max-width: 500px; */
+  border-radius: 18px;
+
+  /* padding: 10px; */
+}
+
+.swipe-text {
+  left: 10%;
+  width: 80%;
+  top: 20%;
+  height: 60%;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.577);
+  position: absolute;
 }

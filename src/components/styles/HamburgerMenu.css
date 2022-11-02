@@ -15,7 +15,8 @@
 .modal-menu > div {
   text-align: center;
   font-family: "Nabla", cursive;
-  font-size: 20px;
+  font-size: 50px;
+  margin: 100px;
 }
 .anchor-text {
   text-decoration: none !important;

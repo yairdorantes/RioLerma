@@ -7,8 +7,7 @@ import lerma3 from "../media/river3.jpg";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
-// import required modules
+import { isBrowser, isMobile } from "react-device-detect";
 
 import {
   EffectCoverflow,
@@ -20,11 +19,31 @@ import {
 } from "swiper";
 import "./styles/swiperLerma.css";
 
+const slides = [
+  {
+    img: lerma1,
+    resume: "El rio lerma apesta",
+  },
+  {
+    img: lerma2,
+    resume: "el rio lerma huele a qlo",
+  },
+  {
+    img: lerma3,
+    resume: "el rio lerma es asqueroso ",
+  },
+];
+
 const SwiperLerma = () => {
+  {
+    isMobile ? console.log("mobile") : console.log("nooo");
+    console.log(isBrowser);
+  }
   return (
     <>
       <section id="swiper-anchor">
         <Swiper
+          style={{ marginTop: "100px" }}
           keyboard={true}
           mousewheel={true}
           className="mySwiper"
@@ -36,7 +55,7 @@ const SwiperLerma = () => {
           loop={true}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={2}
+          slidesPerView={isMobile ? 1 : 2}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -54,21 +73,21 @@ const SwiperLerma = () => {
             Keyboard,
           ]}
         >
-          <SwiperSlide>
-            <div>
-              <img className="img-swiper" src={lerma1} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <img className="img-swiper" src={lerma2} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <img className="img-swiper" src={lerma3} alt="" />
-            </div>
-          </SwiperSlide>
+          {slides.map((slide, key) => {
+            return (
+              <SwiperSlide key={key}>
+                <div className="container-swipe">
+                  <strong className="swipe-text">{slide.resume}</strong>
+                  <img
+                    style={{ padding: isMobile && "10px" }}
+                    className="img-swiper"
+                    src={slide.img}
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </section>
       <br />

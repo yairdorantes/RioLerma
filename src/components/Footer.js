@@ -7,6 +7,9 @@ const Footer = () => {
   return (
     <>
       <footer id="social-media">
+        <div style={{ textAlign: "center" }}>
+          Apoya al rio lerma en estas redes sociales
+        </div>
         <div className="container-social-media">
           <div>
             <a href="https://www.instagram.com/h2o_lerma/?hl=es">

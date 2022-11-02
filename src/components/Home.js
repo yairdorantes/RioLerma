@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./styles/home.css";
 const Home = () => {
   return (
@@ -15,16 +13,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 };
