@@ -21,12 +21,12 @@
   color: aliceblue;
 }
 .tache {
-  width: 40px;
+  width: 30px;
   margin: 10px;
   position: fixed;
 }
 .title-info-modal {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 .modal-post > div {
   text-align: center;
@@ -36,7 +36,10 @@
   font-size: 50px;
 }
 .parrafo-info {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.card-title {
   text-align: left;
 }
 @media only screen and (min-width: 1200px) {
